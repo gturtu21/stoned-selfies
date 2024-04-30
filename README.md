@@ -1,3 +1,18 @@
+# Introduction
+This is a fork of stoned-selfies repository by A.A. Guzik group.
+No modification to the code has been done. The only difference is that a Dockerfile is provided to build an isolated env with the application, thus authomatizing installation and fixing python dependencies. The procedure is shown below.
+# Install by building docker container
+Docker must be installed, to do that refer to docker documentation (https://docs.docker.com/engine/install/ubuntu/).
+```
+$	git clone git@github.com:gturtu21/stoned-selfies.git
+$	cd stoned-selfies
+$	docker build -t stoned-selfies .
+```
+Once built you can simply run the container:
+```
+$	docker run -it stoned-selfies
+$	cd /app
+```
 # STONED-SELFIES
 This repository contains code for the paper: [Beyond Generative Models: Superfast Traversal, Optimization, Novelty, Exploration and Discovery (STONED) Algorithm for Molecules using SELFIES](https://chemrxiv.org/articles/preprint/Beyond_Generative_Models_Superfast_Traversal_Optimization_Novelty_Exploration_and_Discovery_STONED_Algorithm_for_Molecules_using_SELFIES/13383266). 
 By: AkshatKumar Nigam, Robert Pollice, Mario Krenn, Gabriel dos Passos Gomes, Alán Aspuru-Guzik
